@@ -1,0 +1,47 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>Blazor Server Minimal .NET 6</Name>
+    <Description>A minimal Blazor Server .NET 6 project with example code removed</Description>
+    <ProjectType>CSharp</ProjectType>
+    <LanguageTag>CSharp</LanguageTag>
+    <PlatformTag>Web</PlatformTag>
+    <ProjectTypeTag>Web</ProjectTypeTag>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>Blazor Server Min</DefaultName>
+    <ProvideDefaultName>false</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <CreateInPlace>true</CreateInPlace>
+    <Icon>BlazorIcon.png</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="AgentConnect.Blazor.csproj" File="AgentConnect.Blazor.csproj" ReplaceParameters="true">
+      <Folder Name="Properties" TargetFolderName="Properties">
+        <ProjectItem ReplaceParameters="true" TargetFileName="launchSettings.json">launchSettings.json</ProjectItem>
+      </Folder>
+      <Folder Name="wwwroot" TargetFolderName="wwwroot">
+        <Folder Name="css" TargetFolderName="css">
+          <ProjectItem ReplaceParameters="true" TargetFileName="site.css">site.css</ProjectItem>
+        </Folder>
+        <ProjectItem ReplaceParameters="false" TargetFileName="favicon.ico">favicon.ico</ProjectItem>
+      </Folder>
+      <Folder Name="Pages" TargetFolderName="Pages">
+        <ProjectItem ReplaceParameters="true" TargetFileName="_Host.cshtml">_Host.cshtml</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="Error.razor">Error.razor</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="Index.razor">Index.razor</ProjectItem>
+      </Folder>
+      <Folder Name="Shared" TargetFolderName="Shared">
+        <ProjectItem ReplaceParameters="false" TargetFileName="MainLayout.razor">MainLayout.razor</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="_Imports.razor">_Imports.razor</ProjectItem>
+      <ProjectItem ReplaceParameters="false" TargetFileName="App.razor">App.razor</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="appsettings.Development.json">appsettings.Development.json</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="appsettings.json">appsettings.json</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Program.cs">Program.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Startup.cs">Startup.cs</ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>
